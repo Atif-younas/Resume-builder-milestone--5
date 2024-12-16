@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="header">Professional Resume Builder</h1>
+        <h6 class="adnan">by Atif Younas</h6>
+        
+        <!-- Form for resume input -->
+        <form id="resumeForm">
+            <!-- Personal Information Section -->
+            <section id="personal-info">
+                <h2>Personal Information</h2>
+                <input type="text" id="fullName" placeholder="Full Name" required>
+                <input type="text" id="jobTitle" placeholder="Job Title" required>
+                <input type="tel" id="phone" placeholder="Phone Number" required>
+                <input type="email" id="email" placeholder="Email" required>
+                <input type="url" id="linkedin" placeholder="LinkedIn URL" required>
+            </section>
+
+            <!-- Professional Summary Section -->
+            <section id="professional-summary">
+                <h2>Professional Summary</h2>
+                <textarea id="summary" rows="5" placeholder="Brief summary of your professional background" required></textarea>
+            </section>
+
+            <!-- Work Experience Section -->
+            <section id="work-experience">
+                <h2>Work Experience</h2>
+                <div id="experienceContainer"></div>
+                <button type="button" id="addExperience">Add Experience</button>
+            </section>
+
+            <!-- Education Section -->
+            <section id="education">
+                <h2>Education</h2>
+                <div id="educationContainer"></div>
+                <button type="button" id="addEducation">Add Education</button>
+            </section>
+
+            <!-- Skills Section -->
+            <section id="skills">
+                <h2>Skills</h2>
+                <input type="text" id="skillsInput" placeholder="List your skills (comma separated)" required>
+            </section>
+
+            <!-- Awards & Certifications Section -->
+            <section id="awards-certifications">
+                <h2>Awards & Certifications</h2>
+                <div id="awardsContainer"></div>
+                <button type="button" id="addAward">Add Award/Certification</button>
+            </section>
+
+            <!-- Languages Section -->
+            <section id="languages">
+                <h2>Languages</h2>
+                <div id="languagesContainer"></div>
+                <button type="button" id="addLanguage">Add Language</button>
+            </section>
+
+            <!-- Generate Button -->
+            <button type="submit">Generate Your Resume</button>
+        </form>
+
+        <!-- Resume Output -->
+        <div id="resume-output"></div>
+
+        <!-- Edit Button -->
+        <button id="edit-button" class="hidden">Edit</button>
+
+        <!-- Controls for shareable links and PDF -->
+        <div id="controls-container"></div>
+    </div>
+    
+    <script src="app.js" defer></script>
+</body>
+</html>

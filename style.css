@@ -1,0 +1,113 @@
+:root {
+    --primary-color: #7d0dec;
+    --primary-color-hover: #5b0bac;
+    --background-color: #ebeaee;
+    --container-background: #d2d6d6;
+    --text-color: #333;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--background-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: var(--container-background);
+    padding: 20px;
+    width: 90%;
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow-y: auto;
+    max-height: 90vh;
+    scrollbar-width: thin;
+    scrollbar-color: var(--primary-color) var(--container-background);
+}
+
+.container::-webkit-scrollbar {
+    width: 8px;
+}
+
+.container::-webkit-scrollbar-thumb {
+    background-color: var(--primary-color);
+    border-radius: 8px;
+}
+
+.container::-webkit-scrollbar-track {
+    background-color: var(--container-background);
+}
+
+.header, .adnan {
+    text-align: center;
+    color: var(--primary-color);
+}
+
+h1 {
+    font-size: calc(2rem + 0.5vw);
+}
+
+h2 {
+    color: var(--text-color);
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+button {
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--primary-color-hover);
+}
+
+button:focus {
+    outline: 2px solid var(--primary-color-hover);
+    outline-offset: 2px;
+}
+
+.preview-section {
+    border: 1px solid #ccc;
+    padding: 15px;
+    background-color: #fafafa;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.preview-content {
+    padding: 10px;
+    font-family: Arial, sans-serif;
+    color: var(--text-color);
+    min-height: 200px;
+}
+
+.hidden {
+    display: none;
+}

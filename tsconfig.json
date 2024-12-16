@@ -1,0 +1,11 @@
+{
+    "compilerOptions": {
+      "target": "ES2022",           // Specifies the JavaScript version
+      "module": "NodeNext",           // Uses ES6 module system for browsers
+      "moduleResolution": "NodeNext",
+      "outDir": "./dist",        // Output directory for compiled files
+      "rootDir": "./",           // Root directory for TypeScript files
+      "esModuleInterop": true,   // Enables compatibility with CommonJS modules like jsPDF
+    }
+  }
+  
